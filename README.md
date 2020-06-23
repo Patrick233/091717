@@ -7,14 +7,21 @@ Add the following line to `<PhysX_ROOT_DIR>/physx/buildtools/presets/public/<lin
 ```
 
 ## Building you own `cmake` project
+For `Ubuntu 18.04`:
 ```bash
 cd project_using_physx/
 mkdir build && cd build
 cmake -DCMAKE_BUILD_TYPE=Release ..
 make
 ```
-For machine other than `Ubuntu 18.04`, look for `project_using_physx/cmake/FindPhysX.cmake` and set the flags below according to your setup.
-* TARGET_PLATFORM
-* PhysX_COMPILER
-* PhysX_ROOT_DIR
-* PhysX_INSTALL_DIR
+
+For `mac` replace the `cmake` command with:
+```bash
+cmake -DCMAKE_BUILD_TYPE=Release -DTARGET_PLATFORM=mac -DPhysX_COMPILER=x86_32 -DPhysX_ROOT_DIR=<path to PhysX> ..
+```
+
+## Running the snippet
+```bash
+cd <path to project_using_physx>/build
+./SnippetHelloWorldRender 
+```
