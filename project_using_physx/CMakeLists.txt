@@ -4,7 +4,7 @@ project(hello_physx)
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 MESSAGE("CMAKE_MODULE_PATH:" ${CMAKE_MODULE_PATH})
 
-set(CMAKE_CXX_FLAGS "-Wl,--no-as-needed -ldl -lpthread")
+# set(CMAKE_CXX_FLAGS "-Wl,--no-as-needed -ldl -lpthread")
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
