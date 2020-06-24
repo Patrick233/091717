@@ -17,7 +17,7 @@ make
 
 For `mac` replace the `cmake` command with:
 ```bash
-cmake -DCMAKE_BUILD_TYPE=Release -DTARGET_PLATFORM=mac -DPhysX_COMPILER=x86_32 -DPhysX_ROOT_DIR=<path to PhysX> ..
+cmake -DCMAKE_BUILD_TYPE=Release -DTARGET_PLATFORM=mac -DPhysX_COMPILER=x86_64 -DPhysX_ROOT_DIR=<path to PhysX> ..
 ```
 
 ## Running the snippet
