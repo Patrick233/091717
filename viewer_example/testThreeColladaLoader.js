@@ -52,12 +52,15 @@ function initModel() {
     var loader = new THREE.ColladaLoader();
 
     var mesh;
-    loader.load("link0.dae", function (result) {
-        mesh = result.scene.children[0].clone();
-        console.log(mesh);
-        scene.add(mesh);
+    loader.load("link1.dae", function (result) {
+        console.log(result.scene)
+        mesh0 = result.scene.children[0].clone();
+        mesh0.scale.x = 100;
+        mesh0.scale.y = 100;
+        mesh0.scale.z = 100;
+        console.log(mesh0);
+        scene.add(mesh0);
     });
-
 }
 
 //初始化性能插件
